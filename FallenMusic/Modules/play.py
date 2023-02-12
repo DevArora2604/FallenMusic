@@ -220,7 +220,7 @@ async def play(_, message: Message):
         position = len(fallendb.get(message.chat.id))
         qimg = await gen_qthumb(videoid, message.from_user.id)
         await message.reply_photo(
-            photo=qimg,
+            photo="https://te.legra.ph/file/cd4a05b7f8c211f38710c.jpg",
             caption=f"**➻ ᴀᴅᴅᴇᴅ ᴛᴏ ᴏ̨ᴜᴇᴜᴇ ᴀᴛ {position}**\n\n‣ **ᴛɪᴛʟᴇ :** [{title[:27]}](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n‣ **ᴅᴜʀᴀᴛɪᴏɴ :** `{duration}` ᴍɪɴᴜᴛᴇs\n‣ **ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ :** {ruser}",
             reply_markup=buttons,
         )
